@@ -3,6 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/javascript.js to edit this template
  */
 
+if (window.screen.width < 600){
+
 
                function exibeQuemSomos(){
                 document.getElementById("fundo-janelas").style.display = "block";
@@ -10,28 +12,33 @@
                 document.body.style.overflowY = "hidden";
                 document.getElementById("quemsomos").onclick = function(){ocultaQuemSomos();};
                 document.getElementById("quemsomos").style.cursor = "pointer";
+                quemsomos = document.getElementById("texto-quemsomos").offsetWidth;
+                tela = window.screen.width;
+                margem = (tela - quemsomos) / 2 + "px";
+                document.getElementById("texto-quemsomos").style.marginLeft = margem;
             }
                 function ocultaQuemSomos(){
                 document.getElementById("fundo-janelas").style.display = "none";
                 document.getElementById("texto-quemsomos").style.display = "none";
                 document.body.style.overflowY = "visible";
                 document.getElementById("quemsomos").onclick = function(){exibeQuemSomos();};
-            }            
+            }
+            
             document.getElementById("quemsomos").onclick = function(){exibeQuemSomos();};
             document.getElementById("quemsomos").style.cursor = "pointer";
             document.getElementById("fechar-quemsomos").onclick = function(){ocultaQuemSomos();};
             document.getElementById("fechar-quemsomos").style.cursor = "pointer"; 
-            
+
             
             function redimensiona(){
                 contatoNome = document.querySelector("#form-contato form fieldset input[type=text]:first-of-type");
                 contatoEmail = document.querySelector("#form-contato form fieldset input[type=email]");
                 tamanhoLabel = document.querySelector("#form-contato form fieldset label:first-of-type").offsetWidth;
-                tamanhoTela = document.body.offsetWidth;
-                tamanhoForm = tamanhoTela - (tamanhoTela * 0.40);
+                tamanhoTela = window.screen.width;
+                tamanhoForm = tamanhoTela - (tamanhoTela * 0.20);
                 document.getElementById("form-contato").style.width = tamanhoForm + "px";
                 document.querySelector("#form-contato form fieldset").style.width = tamanhoForm - (tamanhoForm * 0.20) + "px";
-                margemEsquerdaForm = (tamanhoTela - tamanhoForm) / 2 + "px";
+                margemEsquerdaForm = (tamanhoTela - tamanhoForm - 25) / 2 + "px";
                 document.getElementById("form-contato").style.marginLeft = margemEsquerdaForm;
                 document.getElementById("questionamento").style.width = tamanhoForm - (tamanhoForm * 0.10) + "px";
                 tamanhoFieldset = document.getElementById("questionamento").clientWidth;
@@ -120,4 +127,5 @@
             function esconderMenu() {
                 document.getElementById("fundo-janelas").style.display = "none";
                 document.getElementById("menuNav").style.display = "none";
+            }
             }
