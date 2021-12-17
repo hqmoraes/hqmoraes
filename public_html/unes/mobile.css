@@ -14,7 +14,7 @@ html{
                 padding: 0;
                 margin: 0;
                 font-family: arial;
-                font-size: 90%;
+                font-size: 95%;
             }
 
             header{
@@ -218,8 +218,7 @@ html{
             }
             
             #texto-colunas{
-                column-count: 2;
-                column-gap: 20px;
+
                 line-height: 150%;
                 width: 90%;
                 margin: 5% auto;
