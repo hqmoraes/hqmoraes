@@ -217,10 +217,10 @@ html{
             #menuNav{
                 position: fixed;
                 top: 0;
-                right:15%;
+                right:0;
                 background: white;
                 padding: 0 0;
-                font-size: 25px;
+                font-size: 20px;
                 font-weight: bold;
                 text-align: center;
                 display: none;
@@ -228,7 +228,7 @@ html{
             }
 
             #menuNav ul{
-                margin-top: 15px;
+                margin-top: 55px;
                 padding: 0 30px 20px 30px;
                 overflow-y: scroll;
                 width: 385px;                
@@ -286,7 +286,7 @@ html{
             }
             
             #tituloMenu{
-                position: sticky;
+                position: absolute;
                 width: 100%;
                 top: 0;
                 background: black;
