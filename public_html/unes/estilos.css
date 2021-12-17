@@ -154,7 +154,7 @@ html{
            
             #form-contato form fieldset{
                 padding: 10px 30px;
-                margin: 10px auto;
+                margin: 0 auto;
             }
             
             #form-contato legend, #form-contato input{
@@ -168,7 +168,7 @@ html{
             
             #questionamento{
                 min-width: 496px;
-                height: 25vh;
+                height: 100px;
                 overflow-y: scroll;
                 margin-top: 20px
             }
