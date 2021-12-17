@@ -215,8 +215,10 @@ html{
                 width: 90%;
                 margin: 0 auto;
                 text-align: left;
+                line-height: 1.5em;
             }
             
+           
             #texto-colunas{
 
                 line-height: 150%;
