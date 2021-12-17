@@ -256,20 +256,20 @@ html{
                 left: 0;
                 right: 0;
                 background: white;
-                padding: 0 0;
+                padding: 10px 0;
                 font-size: 15px;
                 font-weight: bold;
                 text-align: center;
                 display: none;
-                height: 500px;
+                height: 50vh;
             }
 
             #menuNav ul{
-                margin-top: 55px;
-                padding: 0 30px 20px 30px;
+                margin-top: 8%;
+                padding: 0 2%;
                 overflow-y: scroll;
                 width: 385px;                
-                height: 400px;                
+                height: 45vh;
             }
             
             #menuNav ul li{
@@ -285,7 +285,7 @@ html{
             
             
             .titulo3{
-                padding-left:20px;
+                padding-left:10px;
                 font-size: 12px;
                 padding-bottom: 5px;
             }
