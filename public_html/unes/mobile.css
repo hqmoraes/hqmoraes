@@ -5,7 +5,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
 /* 
     Created on : 16 de dez. de 2021, 13:10:13
     Author     : henri
-*/
+
 @media only screen and (min-width: 250px)and (max-width: 599px) {
 html{
     scroll-padding-top: 50px;
@@ -333,3 +333,5 @@ html{
                 padding-top: 10px;
             }
 }
+
+*/
