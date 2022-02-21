@@ -30,7 +30,7 @@ let items = '';
 items = 'Contato,Sobre nós,Onde estamos';
 cabs('inicio',inserItems(items));
 paginasInicio = ['contato.html','sobre_nos.html','onde_estamos.html'];
-caminhoInicio = 'http://localhost/portfolio/onepage/idiomas/pt-br/partes/inicio/';
+caminhoInicio = '/idiomas/pt-br/partes/inicio/';
 paginasInicio.forEach(p =>{
     $.get((caminhoInicio + p), pagina =>{
         $('#inicio main').append(`<div>${pagina}</div>`);
@@ -39,7 +39,7 @@ paginasInicio.forEach(p =>{
 items = 'Produtos,Clientes,Parceiros,Loja';
 cabs('meio',inserItems(items))
 paginasMeio = ['produtos.html','clientes.html','parceiros.html','loja.html'];
-caminhoMeio = 'http://localhost/portfolio/onepage/idiomas/pt-br/partes/meio/';
+caminhoMeio = '/idiomas/pt-br/partes/meio/';
 paginasMeio.forEach(p =>{
     $.get((caminhoMeio + p), pagina =>{
         $('#meio main').append(`<div>${pagina}</div>`);
@@ -48,7 +48,7 @@ paginasMeio.forEach(p =>{
 items = 'Redes Sociais';
 cabs('fim',inserItems(items))
 paginasFim = ['redes_sociais.html'];
-caminhoFim = 'http://localhost/portfolio/onepage/idiomas/pt-br/partes/fim/';
+caminhoFim = '/idiomas/pt-br/partes/fim/';
 paginasFim.forEach(p =>{
     $.get((caminhoFim + p), pagina =>{
         $('#fim main').append(`<div>${pagina}</div>`);

@@ -14,7 +14,7 @@
 
 
 #home{
-    background: url('http://localhost/portfolio/onepage/img/bg/fundoParte1.jpg'), white;
+    background: url('/img/bg/fundoParte1.jpg'), white;
     background-position: top left;
     background-size: cover;
     background-repeat: no-repeat;
@@ -25,9 +25,7 @@
     z-index: 2;
 }
 
-#inicio header, #meio header, #fim header{
-    display: none;
-}
+
 
 #meio .accordion img {
     max-width: 15vw;
