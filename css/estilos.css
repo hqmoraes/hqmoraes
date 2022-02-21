@@ -14,7 +14,7 @@
 
 
 #home{
-    background: url('http://localhost/portfolio/onepage/img/bg/fundoParte1.jpg'), white;
+    background: url('/img/bg/fundoParte1.jpg'), white;
     background-position: top left;
     background-size: cover;
     background-repeat: no-repeat;
